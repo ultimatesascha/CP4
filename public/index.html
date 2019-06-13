@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Creative Project 4</title>
+    </head>
+    <body>
+      <div id="generator" class="content">
+        <h1 class="center">Meme Generator!!</h1>
+        <div class="center">
+          <a href="./create.html">Go to Create-a-Meme</a>
+        </div>
+          <h2 class="center">Your memes</h2>
+          <section class="meme-gallery">
+            <div class="meme">
+              <p>When there's free food in the Wilk:</p>
+              <img src="images/Chubby-Bubbles-Girl.jpg">
+            </div>
+            <div class="meme" v-for="item in items">
+              <p>{{item.caption}}</p>
+              <img :src="item.meme">
+            </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+      <script src="/script.js"></script>    
+    </body>
+</html>
